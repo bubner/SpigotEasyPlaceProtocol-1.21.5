@@ -1,6 +1,6 @@
 name: SpigotEasyPlaceProtocol
 description: Implements the Carpet AccurateBlockPlacement functionality on Spigot.
-version: 1.21.4
+version: 1.21.5
 authors: [DungeonDev, shou692199]
 main: dev.tokasen.easyplaceprotocol.EasyPlaceProtocol
 api-version: 1.21

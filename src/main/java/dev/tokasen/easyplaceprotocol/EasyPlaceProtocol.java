@@ -21,7 +21,6 @@ import com.comphenix.protocol.wrappers.nbt.NbtFactory;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufInputStream;
 import io.netty.buffer.Unpooled;
-import org.bukkit.craftbukkit.v1_21_R3.entity.CraftPlayer;
 import org.bukkit.Axis;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -34,6 +33,7 @@ import org.bukkit.block.data.type.Chest;
 import org.bukkit.block.data.type.Comparator;
 import org.bukkit.block.data.type.Repeater;
 import org.bukkit.block.data.type.Stairs;
+import org.bukkit.craftbukkit.v1_21_R4.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -186,7 +186,7 @@ public class EasyPlaceProtocol extends JavaPlugin implements Listener {
                             chest.setType(Chest.Type.RIGHT);
                         }
                     }
-                // Handle placing a chest normally.
+                    // Handle placing a chest normally.
                 } else if (!player.isSneaking()) {
                     BlockData leftBlock = block.getRelative(left).getBlockData();
                     BlockData rightBlock = block.getRelative(left.getOppositeFace()).getBlockData();
